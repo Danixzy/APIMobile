@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "87f5983a-6772-4170-8ea5-e745c822c2a7",
+		"name": "APIMobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39822036"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"usuario@esoft.com\",\r\n  \"password\": \"Abc123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apimobile-production-aaec.up.railway.app/login",
+					"protocol": "https",
+					"host": [
+						"apimobile-production-aaec",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jogos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apimobile-production-aaec.up.railway.app/jogos",
+					"protocol": "https",
+					"host": [
+						"apimobile-production-aaec",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"jogos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jogos Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apimobile-production-aaec.up.railway.app/jogos/2",
+					"protocol": "https",
+					"host": [
+						"apimobile-production-aaec",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"jogos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Jogo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Elden Ring\",\r\n  \"tipo\": \"RPG\",\r\n  \"nota\": 9,\r\n  \"review\": \"Desafiador e visualmente impecável.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apimobile-production-aaec.up.railway.app/jogos",
+					"protocol": "https",
+					"host": [
+						"apimobile-production-aaec",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"jogos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Jogo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"The Legend of Zelda: Tears of the Kingdom\",\r\n  \"tipo\": \"Aventura\",\r\n  \"nota\": 10,\r\n  \"review\": \"Melhor jogo da geração.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apimobile-production-aaec.up.railway.app/jogos/2",
+					"protocol": "https",
+					"host": [
+						"apimobile-production-aaec",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"jogos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Jogo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://apimobile-production-aaec.up.railway.app/jogos/1",
+					"protocol": "https",
+					"host": [
+						"apimobile-production-aaec",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"jogos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
