@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql:8
+    container_name: apimobile_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-root}
+      MYSQL_DATABASE: ${DB_NAME:-apimobile}
+    ports:
+      - "${DB_PORT:-3306}:3306"
+    volumes:
+      - apimobile_data:/var/lib/mysql
+
+volumes:
+  apimobile_data:
